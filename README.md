@@ -8,6 +8,7 @@ A sample Express.js application that connects to both **MongoDB Atlas** and **Po
 - MongoDB (via Mongoose)
 - PostgreSQL (via pg)
 - Docker + Docker Compose
+- Swagger (API documentation)
 - Cloud Run / Artifact Registry (for deployment)
 
 ---
