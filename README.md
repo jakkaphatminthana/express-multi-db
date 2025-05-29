@@ -32,13 +32,13 @@ POSTGRES_URI=postgresql://<user>:<pass>@<host>:<port>/<dbname>
 ```
 
 ## ☁️ Deploy to Cloud Run
-### 1. Build & push image to Artifact Registry
+#### 1. Build & push image to Artifact Registry
 ```bash
 docker build -t asia-southeast1-docker.pkg.dev/<project-id>/<repo-name>/<image-name> .
 docker push asia-southeast1-docker.pkg.dev/<project-id>/<repo-name>/<image-name>
 ```
 
-### 2. Deploy to Cloud Run
+#### 2. Deploy to Cloud Run
 ```bash
 gcloud run deploy <service-name> \
   --image=asia-southeast1-docker.pkg.dev/<project-id>/<repo-name>/<image-name> \
