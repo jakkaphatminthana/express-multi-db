@@ -38,6 +38,8 @@ docker build -t asia-southeast1-docker.pkg.dev/<project-id>/<repo-name>/<image-n
 docker push asia-southeast1-docker.pkg.dev/<project-id>/<repo-name>/<image-name>
 ```
 
+> If you're on **Mac M1/M2** or encounter architecture issues, consider adding `--platform=linux/amd64`
+
 #### 2. Deploy to Cloud Run
 ```bash
 gcloud run deploy <service-name> \
